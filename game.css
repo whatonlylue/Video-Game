@@ -1,0 +1,58 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+#canvas1{
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.container{
+    min-height: 10vh;
+    max-width: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container a{
+    position: relative;
+    width: 100px;
+    height: 50px;
+    margin: 10px 0;
+    font-size: 30px;
+    color:#e66465;
+    font-family: Arial;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.5s;
+
+}
+.container a:hover{
+    color: black;
+}
+.container a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(100deg,#e66465, #9198e5);
+    background-size: cover;
+    transform-origin: left;
+    transition: 0.5s;
+}
+.container a:hover:before{
+    width: 100%;
+
+}
+.container a span{
+    position: relative;
+    z-index: 1;
+}

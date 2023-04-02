@@ -1,0 +1,74 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: black;
+}
+h1{
+    padding-left: 10px;
+    font-size: 70px;
+    font-family: Arial;
+    background: linear-gradient(100deg,#e66465, #9198e5);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+img{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    left: 172vh;
+    top: -65px;
+}
+
+.topnav{
+    /* From https://css.glass */
+    background-color: rgba(255, 255, 255, .05);
+    border: 1px solid rgba(255, 255, 255, .05);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .05);
+    height: 80px;
+}
+
+.container{
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container a{
+    position: relative;
+    width: 300px;
+    height: 75px;
+    margin: 10px 0;
+    font-size: 50px;
+    color:#e66465;
+    font-family: Arial;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.5s;
+
+}
+.container a:hover{
+    color: black;
+}
+.container a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(100deg,#e66465, #9198e5);
+    background-size: cover;
+    transform-origin: left;
+    transition: 0.5s;
+}
+.container a:hover:before{
+    height: 100%;
+}
+.container a span{
+    position: relative;
+    z-index: 1;
+}
